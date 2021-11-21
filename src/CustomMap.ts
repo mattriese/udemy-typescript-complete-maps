@@ -1,6 +1,6 @@
 //Instructions to every other class on how they can satisfy the requirements to
 // be an argument to addMarker
-interface Mappable {
+export interface Mappable {
   infoWindowContent?: string;
   location: {
     lat: number;
