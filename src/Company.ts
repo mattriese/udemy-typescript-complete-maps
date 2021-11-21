@@ -7,6 +7,7 @@ export class Company {
     lat: number;
     lng: number;
   };
+  infoWindowContent: string;
 
   constructor() {
     this.companyName = faker.company.companyName();
@@ -15,5 +16,6 @@ export class Company {
       lat: parseFloat(faker.address.latitude()),
       lng: parseFloat(faker.address.longitude()),
     };
+    this.infoWindowContent = `<h3>Company: </h3><h5>${this.companyName}:</h5> ${this.catchPhrase}`;
   }
 }

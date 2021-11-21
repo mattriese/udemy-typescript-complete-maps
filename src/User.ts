@@ -6,6 +6,7 @@ export class User {
     lat: number;
     lng: number;
   };
+  infoWindowContent: string;
 
   constructor() {
     this.name = faker.name.firstName();
@@ -13,5 +14,6 @@ export class User {
       lat: parseFloat(faker.address.latitude()),
       lng: parseFloat(faker.address.longitude()),
     };
+    this.infoWindowContent = `<h3>User: </h3> ${this.name}`;
   }
 }
